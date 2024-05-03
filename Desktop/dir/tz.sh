@@ -19,3 +19,12 @@ copy_files() {
   done
 }
 copy_files "$input_dir"
+
+echo "Список файлов:"
+find "$1" -maxdepth 1 -type f
+
+echo "Список директорий:"
+find "$1" -maxdepth 1 -type d
+
+echo "Список всех файлов:"
+find "$1" -type f
